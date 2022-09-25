@@ -1,0 +1,1069 @@
+﻿<Window x:Class="MyStat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyStat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.ColumnSpan="9">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Background="#02a8f4" Orientation="Horizontal" ></StackPanel>
+
+            <StackPanel Grid.Column="1" Grid.ColumnSpan="9" Background="#FF5DDAFF" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button HorizontalAlignment="Right" Width="66" Height="40">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Шляпа.JPG"/>
+                    </Button.Background>
+                </Button>
+                <Button HorizontalAlignment="Right" Width="46" Height="40">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Увага.JPG"/>
+                    </Button.Background>
+                </Button>
+                <Button HorizontalAlignment="Right" VerticalAlignment="Top"  Width="46" Height="40">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Звезда.JPG"/>
+                    </Button.Background>
+                </Button>
+                <Button HorizontalAlignment="Right" VerticalAlignment="Top"  Width="46" Height="40">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Колокол.JPG"/>
+                    </Button.Background>
+                </Button>
+                <Button HorizontalAlignment="Right" VerticalAlignment="Top"  Width="66" Height="40">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Пустота.JPG"/>
+                    </Button.Background>
+                </Button>
+                <Button HorizontalAlignment="Right" VerticalAlignment="Top"  Width="46" Height="40">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Настройки.JPG"/>
+                    </Button.Background>
+                </Button>
+                <Button HorizontalAlignment="Right" VerticalAlignment="Top"  Width="66" Height="40">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Пустота.JPG"/>
+                    </Button.Background>
+                </Button>
+                <Button HorizontalAlignment="Right" VerticalAlignment="Top"  Width="46" Height="40">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Выход.JPG"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <StackPanel  Grid.Row="0" Grid.RowSpan="9" Background="#0687d5" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="250" Width="30">
+                <Button.Background>
+                    <ImageBrush ImageSource="Левая панель.JPG"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+        <Label Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Content="22 СЕНТЯБРЬ, ЧЕТВЕРГ" FontSize="18" VerticalAlignment="Center"></Label>
+        <Button Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="3" Content="ОТМЕТИТЬ ЗА ДРУГУЮ ДАТУ" Background="#FF6FD5FB" Height="30" VerticalAlignment="Center">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+        <TabControl Grid.Column="1" Grid.Row="2" Grid.RowSpan="10" Grid.ColumnSpan="10">
+            <TabItem Header="1 пара">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Label Content="КН-П-201 (Разработка на WPF)" FontSize="18" Grid.ColumnSpan="5" Margin="0,0,0.112,0"></Label>
+
+                    <Grid Grid.Row="1"> 
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition /> 
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Left" Grid.ColumnSpan="2">
+                            <RadioButton Content="Основной преподаватель" FontSize="10"></RadioButton>
+                            <RadioButton Content="Преподаватель на замене" FontSize="10"></RadioButton>
+                        </StackPanel>
+                        <Label Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Тема урока:" FontSize="12" /> 
+                        <Button Grid.Column="2" Content="ДОБАВИТЬ МАТИЕРИАЛ" Background="#FF6FD5FB" VerticalAlignment="Center" FontSize="10" Width="150">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button> 
+                    </Grid>
+
+                    <Grid Grid.Row="2" Background="#FF98CCEC">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.ColumnSpan="2" Grid.Column="0" HorizontalAlignment ="Center" VerticalAlignment="Center">ФИО студента</Label>
+                        <Label Grid.Column="2" HorizontalAlignment ="Center" VerticalAlignment="Center">Заходил в майстат</Label>
+                        <Label Grid.Column="3" HorizontalAlignment ="Center" VerticalAlignment="Center">Отметить</Label>
+                        <Label Grid.Column="4" HorizontalAlignment ="Center" VerticalAlignment="Center">Работы</Label>
+                        <Label Grid.Column="5" HorizontalAlignment ="Center" VerticalAlignment="Center">Кристалы</Label>
+                        <Label Grid.Column="6" HorizontalAlignment ="Center" VerticalAlignment="Center">Коментарий</Label>
+                    </Grid>
+
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition /> 
+                            <ColumnDefinition /> 
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Макс.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Белов Максим" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="22.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Богдан.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Боярчук Богдан" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="22.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Ира.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Вацько Ирина" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="21.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Даня.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Карпов Данил" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="20.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="7">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Альберт.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Котликов Альберт" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="01.01.0001"></Label>
+                        <Label Grid.Column="4" Content="Нет" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Антон.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Кузьмин Антон" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="22.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid> 
+                </Grid>
+            </TabItem>
+            <TabItem Header="2 пара">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Label Content="КН-П-201 (Уроки по кошкам)" FontSize="18" Grid.ColumnSpan="5" Margin="0,0,0.112,0"></Label>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Left" Grid.ColumnSpan="2">
+                            <RadioButton Content="Основной преподаватель" FontSize="10"></RadioButton>
+                            <RadioButton Content="Преподаватель на замене" FontSize="10"></RadioButton>
+                        </StackPanel>
+                        <Label Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Тема урока:" FontSize="12" />
+                        <Button Grid.Column="2" Content="ДОБАВИТЬ МАТИЕРИАЛ" Background="#FF6FD5FB" VerticalAlignment="Center" FontSize="10" Width="150">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </Grid>
+
+                    <Grid Grid.Row="2" Background="#FF98CCEC">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.ColumnSpan="2" Grid.Column="0" HorizontalAlignment ="Center" VerticalAlignment="Center">ФИО студента</Label>
+                        <Label Grid.Column="2" HorizontalAlignment ="Center" VerticalAlignment="Center">Заходил в майстат</Label>
+                        <Label Grid.Column="3" HorizontalAlignment ="Center" VerticalAlignment="Center">Отметить</Label>
+                        <Label Grid.Column="4" HorizontalAlignment ="Center" VerticalAlignment="Center">Работы</Label>
+                        <Label Grid.Column="5" HorizontalAlignment ="Center" VerticalAlignment="Center">Кристалы</Label>
+                        <Label Grid.Column="6" HorizontalAlignment ="Center" VerticalAlignment="Center">Коментарий</Label>
+                    </Grid>
+
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Макс.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Белов Максим" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="22.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Богдан.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Боярчук Богдан" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="22.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Ира.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Вацько Ирина" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="21.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Даня.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Карпов Данил" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="20.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="7">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Альберт.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Котликов Альберт" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="01.01.0001"></Label>
+                        <Label Grid.Column="4" Content="Нет" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Антон.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Кузьмин Антон" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="22.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="3 пара">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Label Content="КН-П-201 (Урок Рисования с Александром)" FontSize="18" Grid.ColumnSpan="5" Margin="0,0,0.112,0"></Label>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Left" Grid.ColumnSpan="2">
+                            <RadioButton Content="Основной преподаватель" FontSize="10"></RadioButton>
+                            <RadioButton Content="Преподаватель на замене" FontSize="10"></RadioButton>
+                        </StackPanel>
+                        <Label Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Тема урока:" FontSize="12" />
+                        <Button Grid.Column="2" Content="ДОБАВИТЬ МАТИЕРИАЛ" Background="#FF6FD5FB" VerticalAlignment="Center" FontSize="10" Width="150">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </Grid>
+
+                    <Grid Grid.Row="2" Background="#FF98CCEC">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.ColumnSpan="2" Grid.Column="0" HorizontalAlignment ="Center" VerticalAlignment="Center">ФИО студента</Label>
+                        <Label Grid.Column="2" HorizontalAlignment ="Center" VerticalAlignment="Center">Заходил в майстат</Label>
+                        <Label Grid.Column="3" HorizontalAlignment ="Center" VerticalAlignment="Center">Отметить</Label>
+                        <Label Grid.Column="4" HorizontalAlignment ="Center" VerticalAlignment="Center">Работы</Label>
+                        <Label Grid.Column="5" HorizontalAlignment ="Center" VerticalAlignment="Center">Кристалы</Label>
+                        <Label Grid.Column="6" HorizontalAlignment ="Center" VerticalAlignment="Center">Коментарий</Label>
+                    </Grid>
+
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Макс.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Белов Максим" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="22.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Богдан.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Боярчук Богдан" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="22.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Ира.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Вацько Ирина" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="21.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Даня.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Карпов Данил" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="20.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="7">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Альберт.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Котликов Альберт" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="01.01.0001"></Label>
+                        <Label Grid.Column="4" Content="Нет" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid Grid.Row="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Width="40">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Антон.JPG"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Grid.Column="1" Content="Кузьмин Антон" Grid.ColumnSpan="2"></Label>
+                        <Label Grid.Column="3" Content="22.09.2022"></Label>
+                        <Label Grid.Column="4" Content="Есть" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                        <ComboBox Grid.Column="6" Width="40" HorizontalAlignment="Center">
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+
+                        <ComboBox Width="40" Grid.Column="7" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
